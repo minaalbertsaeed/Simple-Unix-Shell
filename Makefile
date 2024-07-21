@@ -20,3 +20,10 @@ $(OUTPUT): $(OBJ)
 clean:
 	rm -f $(OBJ) $(OUTPUT)
 
+gdb: $(OUTPUT)
+	gdb $(OUTPUT)
+
+
+run: $(OUTPUT)
+	./$(OUTPUT)
+
